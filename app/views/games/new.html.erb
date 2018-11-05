@@ -1,0 +1,13 @@
+<h1>NEW GAME!</h1>
+
+<h2>Here is your randomly selected letters:</h2>
+<div class="wrapper">
+  <ul>
+    <% @letters.each do |letter|  %>
+    <div class="single-letter">
+      <li><%= letter.upcase %></li>
+    </div>
+    <% end %>
+    
+  </ul>
+</div>
